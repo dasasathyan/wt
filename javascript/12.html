@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<span onmouseover="this.style.color='red'">Mouse over me!</span>
+<button onclick="show()">Click Me</button>
+<p id="demo"></p>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)">Hold me</div>
+<form id="myForm">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="reset()" value="Reset form">
+</form>
+<script>
+function show() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+function mDown(obj) {
+    obj.innerHTML = "Release Me";
+}
+function mUp(obj) {
+    obj.innerHTML="Thank You";
+}
+function reset() {
+    document.getElementById("myForm").reset();
+}
+
+</script>
+</body>
+</html>
