@@ -1,5 +1,14 @@
 <html>
+<head><link rel="stylesheet" href="css/bootstrap.min.css">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Dasa Sathyan's BLOG</title></head>
+<body>
 <?php
 
 
@@ -7,17 +16,26 @@ $dbConnect = mysql_connect("localhost", "root", "zaqwer123");
 if (!$dbConnect) {
     die("Not connected : " . mysql_error());
 }
-echo nl2br("Logged into \r\n MySql");
+//echo nl2br("Logged into \r\n MySql");
 
 $db_selected = mysql_select_db("christ", $dbConnect);
 if (!$db_selected) {
     die ("Can't use christ : " . mysql_error());
 }
-echo "\nChrist Database selected\n";
+//echo "\nChrist Database selected\n";
 $marks= mysql_query("SELECT id,name FROM marks");
 while($rows=mysql_fetch_array($marks)){
-echo $rows['id']  ;
-echo $rows['name'];
+  ?>
+  <div class="row container">
+<div class="col-md-6 main"></div>
+    <div class="col-md-6 main">
+  	<h1>
+<?php
+echo $rows['id'].". "  ;
+echo $rows['name'];?></h1>
+</div>
+</div>
+<?php
 }
 if (isset($_REQUEST['remove'])){
   ?>

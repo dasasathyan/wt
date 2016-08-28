@@ -49,7 +49,7 @@ document.location="removedata.php";
     Digital Logic mark<input type="text" name="dl" placeholder="Enter your Digital Logic mark"/><br>
     <p> What do you want to do?</p>
     ADD DATA<input type="submit" name="add" value="ADD Data"/><br>
-    REMOVE DATA<input type="submit" name="delete" value="REMOVE Data"/><br>
+    
   </form>
 </body>
 </html>
