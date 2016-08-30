@@ -8,7 +8,7 @@
 <script src="js/bootstrap.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<title>Dasa Sathyan's BLOG</title></head>
-<body>
+<body style="background-color:#00ccff">
 <?php
 
 

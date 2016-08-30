@@ -10,11 +10,11 @@ $db_selected = mysql_select_db("christ", $dbConnect);
 if (!$db_selected) {
     die ("Can't use christ : " . mysql_error());
 }
-echo "\nChrist Database selected\n";
+echo "\r\nChrist Database selected\r\n";
 
 $marks= mysql_query("SELECT id,name FROM marks");
 while($rows=mysql_fetch_array($marks)){
-echo $rows['id']  ;
-echo $rows['name'];
+echo $rows['id']. "." ;
+echo $rows['name']."\r\n";
 }
 ?>
