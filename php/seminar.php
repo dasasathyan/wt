@@ -2,15 +2,15 @@
 <?php
 
 $dbConnect = mysql_connect("localhost", "root", "zaqwer123");
-if (!$dbConnect) {
+/*if (!$dbConnect) {
     die("Not connected : " . mysql_error());
-}
+}*/
 echo "Logged into MySql";
 
 $db_selected = mysql_select_db("christ", $dbConnect);
-if (!$db_selected) {
+/*if (!$db_selected) {
     die ("Can't use christ : " . mysql_error());
-}
+}*/
 echo "\nChrist Database selected\n";
 if (isset($_REQUEST['add'])){
   echo "\ngoing to add\n";
