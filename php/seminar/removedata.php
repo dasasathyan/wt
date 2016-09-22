@@ -51,7 +51,7 @@ if (isset($_REQUEST['remove'])){
 ?>
 
 <form method="post">
-Enter the ID which u want to delete<input type="number" name="id"/>
+Enter the ID which u want to delete<input style="color:white;" type="number" name="id"/>
 <input type="submit" name="remove"/>
 </form>
 </html>

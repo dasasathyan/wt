@@ -13,6 +13,7 @@ if (!$db_selected) {
 echo "\r\nChrist Database selected\r\n";
 
 $marks= mysql_query("SELECT id,name FROM marks");
+mysql_query("UPDATE marks SET name = 'dasa' WHERE id=2");
 while($rows=mysql_fetch_array($marks)){
 echo $rows['id']. "." ;
 echo $rows['name']."\r\n";

@@ -1,0 +1,17 @@
+<html>
+
+<body>
+  <script>
+  function myfunc(){
+    var valid=/^[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,4}$/;
+    var email=document.getElementById("name").value;
+    if(!valid.test(email)){
+      alert("input invalid");
+    }
+  }
+  </script>
+
+<input type="text" id="name"/>
+<input type="button" onclick="myfunc()"/>
+</body>
+</html>

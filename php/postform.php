@@ -15,7 +15,7 @@ if(isset($_REQUEST['sub'])){
   echo "We said it for fun..We have hacked your ".$accNo." having ".$password;
   ?>
   <script>
-  alert("We got all your money..");
+  alert("Thank you.. ");
   </script>
 <?php }
  ?>

@@ -25,12 +25,12 @@ echo "added";
 ?>
 <body>
   <form method="post">
-    Name<input type="text" name="name" placeholder="Enter your name"/>
-    Web Technologies mark<input type="text" name="wt" placeholder="Enter your Web Technologies mark"/>
-    C Programming mark<input type="text" name="c" placeholder="Enter your C Programming mark"/>
-    HRM mark<input type="text" name="hr" placeholder="Enter your HRM mark"/>
-    Digital Logic mark<input type="text" name="dl" placeholder="Enter your Digital Logic mark"/>
-    <input type="submit" name="sub"/>
+    Name<input type="text" name="name" placeholder="Enter your name"/><br>
+    Web Technologies mark<input type="text" name="wt" placeholder="Enter your Web Technologies mark"/><br>
+    C Programming mark<input type="text" name="c" placeholder="Enter your C Programming mark"/><br>
+    HRM mark<input type="text" name="hr" placeholder="Enter your HRM mark"/><br>
+    Digital Logic mark<input type="text" name="dl" placeholder="Enter your Digital Logic mark"/><br>
+    <input type="submit" name="sub"/><br>
   </form>
 </body>
 </html>
