@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function calls()
+{
+alert("1");
+var name=/^[a-zA-Z]{20}$/;
+if(!name.test(form.name.value))
+{
+alert("Enter correct name");
+}
+alert(" correct name");
+}
+</script>
+</head>
+<body>
+<form name="form">
+name<input type="text" name="name"/>
+<input type="submit" value="click" onClick="calls()"/>
+
+</form>
+
+</body>
+
+
+</html>
