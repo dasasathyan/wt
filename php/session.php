@@ -9,6 +9,7 @@
 
    $msg = "You have visited this page ".  $_SESSION['counter'];
    $msg .= " times in this session.";//the more and more you refresh and the more and more it gets incremented
+  // session_destroy();
 ?>
 
 <html>
